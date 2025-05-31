@@ -1,0 +1,2791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce page</title>
+<!-- open sans font cdn link  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+ <!-- fondt awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- bootsrap css link  -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- swiper css link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- scroll fade  -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- custom css link  -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    
+    <div class="top-nav">
+        <p>FREE delivery & 60% Discount for next 3 orders! Place your 1st order in.</p>
+       
+               <div class="col-lg-4 offset-3">
+                  <div class="timer">
+                     <div>
+                        <span class="days" id="day"></span> 
+                        <div class="smalltext">Days</div>
+                     </div>
+                     <div>
+                        <span class="hours" id="hour"></span> 
+                        <div class="smalltext">Hours</div>
+                     </div>
+                     <div>
+                        <span class="minutes" id="minute"></span> 
+                        <div class="smalltext">Minutes</div>
+                     </div>
+                     <div>
+                        <span class="seconds" id="second"></span> 
+                        <div class="smalltext">Seconds</div>
+                     </div>
+                     <p id="time-up"></p>
+                  </div>
+               </div>
+         
+        
+    </div>
+    
+        <div class="e-commerce-body">
+            <div class="row_top">
+                <ul class="largenav pull-right">
+                    <li class="upper-links"><a class="links" href="#">About Us</a></li>
+                    <li class="upper-links"><a class="links" href="registration.html">My account</a></li>
+                    <li class="upper-links"><a class="links" href="details.html">Wishlist</a></li>
+                    <li class="upper-links"><a class="links" href="#">We deliver to you every day from 7:00 to 23:00</a></li>
+                       </ul>
+                       <div class="connection-area">
+                        <select>
+                            <option>Language</option>
+                            <option>Hindi</option>
+                            <option>English</option>
+                            <option>German</option>
+                            <option>French</option>
+                            <option>Spanish</option>
+                            <option>British</option>
+                        </select>
+                        <select>
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>JPY</option>
+                            <option>AUD</option>
+                            <option>INR</option>
+                            <option>GBP</option>
+                            <option>CNY</option>
+                        </select>
+                        <ul class="largenav pull-right">
+                            <li class="upper-links"><a class="links" href="#">Order Tracking</a></li>
+                           </ul>
+                    </div>
+                       
+            </div>
+            <div class="brand-navbar">
+                <div class="logo-area col-lg-2 col-sm-12">
+                    <div class="brand-logo">
+                    <img src="images/Group 70 (2).png" alt="brandlogo"/>
+                </div>
+                <div class="hamburgermenu">
+                    <div class="menuicon">
+                    <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="hamburger-area">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                               </div>
+                </div>
+                </div>
+                <div class="jinstore-navbar-search smallsearch col-sm-8 col-xs-11">
+                    <div class="location-searchbar">
+                        <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="location-text">
+                        <p>Deliver to All</p>
+                    </div>
+                        </div>
+                        <input class="jinstore-navbar-input col-xs-11" type="" placeholder="Search for Products, Brands and more" name="">
+                        <button class="jinstore-navbar-button col-xs-1">
+                            <svg width="15px" height="15px">
+                                <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="cart largenav col-sm-2">
+                    <div class="sign-area">
+                        <a href="adminDashbar.html"><i class="far fa-user"></i></a>
+                    <a href="login.html" class="cart-button">
+                       <span class="item-number ">Sign in Account</span> </a>
+                    </div>
+                     <a href="details.html"><i class="far fa-heart"></i></a>   
+                 <a href="cardlist.html"><img src="images/shopppingLink.png" alt=""></a>  
+                        
+                   
+                </div>
+         
+        </div>
+<div class="slider-all-part">
+<div class="bottom-nav">
+    <div class="dropdown">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <img src="images/Icon.png" alt="">
+                    All Categories
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <!-- <i class="fas fa-apple-alt"></i> -->
+                             <!-- <svg class="app-icon">
+                                <use href="assets/icon.svg#Biscuiticon"></use>
+                             </svg> -->
+                             <img src="images/apple.svg fill.png" alt="">
+                             Fruits & Vegetables
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <div class="dropdown-menubar">
+                                <ul>
+                                    <li class="upper-links"><a class="links" href="#"><i class="far fa-lemon"></i></i> Fruits</a></li>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-carrot"></i> Vegetables</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <!-- <i class="fas fa-fish"></i> -->
+                             <img src="images/meat.svg fill.png" alt="">
+                              Meats & Seafood
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <div class="dropdown-menubar">
+                                <ul>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-drumstick-bite"></i>Meats</a></li>
+                                     <li class="upper-links"><a class="links" href="#"><i class="fas fa-fish"></i>Seafood</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <!-- <i class="fas fa-coffee"></i> -->
+                             <img src="images/boiled-egg.svg.png">
+                             Breaksfast & Dairy
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <div class="dropdown-menubar">
+                                <ul>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-bacon"></i>Breaksfast</a></li>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-blender"></i>Dairy</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <!-- <i class="fas fa-bread-slice"></i> -->
+                             <img src="images/toast-bread.svg fill.png" alt="">
+                             Breads & Bakery
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <div class="dropdown-menubar">
+                                <ul>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-bread-slice"></i>Breads</a></li>
+                                    <li class="upper-links"><a class="links" href="#"><i class="fas fa-birthday-cake"></i>Bakery</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingnine">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <!-- <i class="fas fa-glass-cheers"></i> -->
+                             <img src="images/cup.svg fill.png" alt="">
+                             Beverages
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <div class="dropdown-menubar">
+                                <ul>
+                                    <li class="upper-links"><a class="links" href="#">
+                                        <i class="fas fa-mug-hot"></i>
+                                        Hot Drinks</a></li>
+                                    <li class="upper-links"><a class="links" href="#">
+                                        <i class="fas fa-coffee"></i>
+                                        Cold Drinks</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+              </div>
+            </div>
+              <div class="dropdown-menubar">
+                <ul>
+                    <li class="upper-links"><a class="links" href="product.html">
+                        <!-- <i class="fas fa-stroopwafel"></i> -->
+                        <img src="images/snowflake.svg.png" alt="">
+                         Frozen Foods</a></li>
+                    <li class="upper-links"><a class="links" href="productpage.html">
+                        <!-- <i class="fas fa-cookie"></i> -->
+                         <img src="images/bar.svg.png" alt="">
+                         Biscuits & Snacks</a></li>
+                    <li class="upper-links"><a class="links" href="product.html">
+                        <!-- <i class="fas fa-seedling"></i> -->
+                         <img src="images/wheat.svg fill.png" alt="">
+                         Grocery & Staples</a></li>
+                    <li class="upper-links"><a class="links" href="productpage.html">
+                        <!-- <i class="fas fa-prescription-bottle"></i> -->
+                         <img src="images/scoop.svg.png">
+                         Household Needs</a></li>
+                    <li class="upper-links"><a class="links" href="product.html">
+                        <!-- <i class="fas fa-pump-medical"></i> -->
+                         <img src="images/toilet-paper.svg fill.png">
+                         Healthcare</a></li>
+                    <li class="upper-links"><a class="links" href="productpage.html">
+                        <!-- <i class="fas fa-baby-carriage"></i> -->
+                         <img src="images/Group.png" alt="">
+                         Baby & Pregnancy</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+      
+            <div class="row1">
+                <div class="right-menubar"> 
+                    <div class="left-btn-area">
+                    <button class="btn btn-primary leftmenubar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        All Categories
+                      </button>             
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="dropdown">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                   
+                                     
+                                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">
+                                            
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                    <!-- <i class="fas fa-apple-alt"></i> -->
+                                                     <!-- <svg class="app-icon">
+                                                        <use href="assets/icon.svg#Biscuiticon"></use>
+                                                     </svg> -->
+                                                     <img src="images/apple.svg fill.png" alt="">
+                                                     Fruits & Vegetables
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                                  <div class="accordion-body">
+                                                    <div class="dropdown-menubar">
+                                                        <ul>
+                                                            <li class="upper-links"><a class="links" href="product.html"><i class="fas fa-stroopwafel"></i>Fruits</a></li>
+                                                            <li class="upper-links"><a class="links" href="productpage.html"><i class="fas fa-cookie"></i>Vegetables</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                    <!-- <i class="fas fa-fish"></i> -->
+                                                     <img src="images/meat.svg fill.png" alt="">
+                                                      Meats & Seafood
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                  <div class="accordion-body">
+                                                    <div class="dropdown-menubar">
+                                                        <ul>
+                                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-drumstick-bite"></i>Meats</a></li>
+                                             <li class="upper-links"><a class="links" href="#"><i class="fas fa-fish"></i>Seafood</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                    <!-- <i class="fas fa-coffee"></i> -->
+                                                     <img src="images/boiled-egg.svg.png">
+                                                     Breaksfast & Dairy
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                  <div class="accordion-body">
+                                                    <div class="dropdown-menubar">
+                                                        <ul>
+                                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-stroopwafel"></i>Breaksfast</a></li>
+                                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-cookie"></i>Dairy</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                    <!-- <i class="fas fa-bread-slice"></i> -->
+                                                     <img src="images/toast-bread.svg fill.png" alt="">
+                                                     Breads & Bakery
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                  <div class="accordion-body">
+                                                    <div class="dropdown-menubar">
+                                                        <ul>
+                                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-bread-slice"></i>Breads</a></li>
+                                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-birthday-cake"></i>Bakery</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header" id="panelsStayOpen-headingnine">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" >
+                                                    <!-- <i class="fas fa-glass-cheers"></i> -->
+                                                     <img src="images/cup.svg fill.png" alt="">
+                                                     Beverages
+                                                  </button>
+                                                </h2>
+                                                <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                  <div class="accordion-body">
+                                                    <div class="dropdown-menubar">
+                                                        <ul>
+                                                            <li class="upper-links"><a class="links" href="#">
+                                                                <i class="fas fa-mug-hot"></i>
+                                                                Hot Drinks</a></li>
+                                                            <li class="upper-links"><a class="links" href="#">
+                                                                <i class="fas fa-coffee"></i>
+                                                                Cold Drinks</a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                        
+                                        </div>
+                                      </div>
+                                   
+                                      <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-stroopwafel"></i> -->
+                                                <img src="images/snowflake.svg.png" alt="">
+                                                 Frozen Foods</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-cookie"></i> -->
+                                                 <img src="images/bar.svg.png" alt="">
+                                                 Biscuits & Snacks</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-seedling"></i> -->
+                                                 <img src="images/wheat.svg fill.png" alt="">
+                                                 Grocery & Staples</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-prescription-bottle"></i> -->
+                                                 <img src="images/scoop.svg.png">
+                                                 Household Needs</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-pump-medical"></i> -->
+                                                 <img src="images/toilet-paper.svg fill.png">
+                                                 Healthcare</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <!-- <i class="fas fa-baby-carriage"></i> -->
+                                                 <img src="images/Group.png" alt="">
+                                                 Baby & Pregnancy</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                              </div>
+                        
+                          
+                        </div>
+                      </div>
+                    </div>
+        <!-- right dropdawn  -->
+        <div class="right-btn-area">
+        <button class="btn btn-primary rightmenubar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            menu</button>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body small">
+            <div class="navbar-menu">
+                <ul>
+                    <li><a  href="index.html">Home </a></li>
+                    <li><a  href="#">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="shop-dropdawn">
+                            <ul>
+                                <li><a href="product.html">Grocery Iteams</a></li>
+                                <li><a href="productpage.html">Dairy Products</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a  href="product.html">Fruits & Vegetables</a></li>
+                    <li><a  href="filter.html">Beverages</a></li>
+                    <li><a  href="blog.html">Blog</a></li>
+                    <li><a  href="cantact.html">Contact</a></li>
+                </ul>
+                
+        </div>
+          </div>
+        </div>
+        </div>
+                    </div>
+                <nav class="navbar-menu">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        All Categories
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="accordion-body">
+                    
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <!-- <i class="fas fa-apple-alt"></i> -->
+                                     <!-- <svg class="app-icon">
+                                        <use href="assets/icon.svg#Biscuiticon"></use>
+                                     </svg> -->
+                                     <img src="images/apple.svg fill.png" alt="">
+                                     Fruits & Vegetables
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                  <div class="accordion-body">
+                                    <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#"><i class="far fa-lemon"></i></i> Fruits</a></li>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-carrot"></i> Vegetables</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <!-- <i class="fas fa-fish"></i> -->
+                                     <img src="images/meat.svg fill.png" alt="">
+                                      Meats & Seafood
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                  <div class="accordion-body">
+                                    <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-drumstick-bite"></i>Meats</a></li>
+                                             <li class="upper-links"><a class="links" href="#"><i class="fas fa-fish"></i>Seafood</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingseven">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <!-- <i class="fas fa-coffee"></i> -->
+                                     <img src="images/boiled-egg.svg.png">
+                                     Breaksfast & Dairy
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                  <div class="accordion-body">
+                                    <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-bacon"></i>Breaksfast</a></li>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-blender"></i>Dairy</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingeight">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <!-- <i class="fas fa-bread-slice"></i> -->
+                                     <img src="images/toast-bread.svg fill.png" alt="">
+                                     Breads & Bakery
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                  <div class="accordion-body">
+                                    <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-bread-slice"></i>Breads</a></li>
+                                            <li class="upper-links"><a class="links" href="#"><i class="fas fa-birthday-cake"></i>Bakery</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingnine">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <!-- <i class="fas fa-glass-cheers"></i> -->
+                                     <img src="images/cup.svg fill.png" alt="">
+                                     Beverages
+                                  </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                  <div class="accordion-body">
+                                    <div class="dropdown-menubar">
+                                        <ul>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <i class="fas fa-mug-hot"></i>
+                                                Hot Drinks</a></li>
+                                            <li class="upper-links"><a class="links" href="#">
+                                                <i class="fas fa-coffee"></i>
+                                                Cold Drinks</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                        </div>
+                        <div class="dropdown-menubar">
+                            <ul>
+                                <li class="upper-links"><a class="links" href="product.html">
+                                    <!-- <i class="fas fa-stroopwafel"></i> -->
+                                    <img src="images/snowflake.svg.png" alt="">
+                                     Frozen Foods</a></li>
+                                <li class="upper-links"><a class="links" href="productpage.html">
+                                    <!-- <i class="fas fa-cookie"></i> -->
+                                     <img src="images/bar.svg.png" alt="">
+                                     Biscuits & Snacks</a></li>
+                                <li class="upper-links"><a class="links" href="filter.html">
+                                    <!-- <i class="fas fa-seedling"></i> -->
+                                     <img src="images/wheat.svg fill.png" alt="">
+                                     Grocery & Staples</a></li>
+                                <li class="upper-links"><a class="links" href="product.html">
+                                    <!-- <i class="fas fa-prescription-bottle"></i> -->
+                                     <img src="images/scoop.svg.png">
+                                     Household Needs</a></li>
+                                <li class="upper-links"><a class="links" href="productpage.html">
+                                    <!-- <i class="fas fa-pump-medical"></i> -->
+                                     <img src="images/toilet-paper.svg fill.png">
+                                     Healthcare</a></li>
+                                <li class="upper-links"><a class="links" href="filter.html">
+                                    <!-- <i class="fas fa-baby-carriage"></i> -->
+                                     <img src="images/Group.png" alt="">
+                                     Baby & Pregnancy</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                    <ul>
+                        <li><a  href="index.html">Home </a></li>
+                        <li><a  href="#">Shop <i class="fas fa-chevron-down"></i></a>
+                            <div class="shop-dropdawn">
+                                <ul>
+                                    <li><a href="product.html">Dairy Products</a></li>
+                                    <li><a href="productpage.html">Grocery Iteams</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a  href="productpage.html">Fruits & Vegetables</a></li>
+                        <li><a  href="filter.html">Beverages</a></li>
+                        <li><a  href="blog.html">Blog</a></li>
+                        <li><a  href="cantact.html">Contact</a></li>
+                    </ul>
+                    <div class="connection-area">
+                        <ul class="largenav pull-right">
+                            <li class="upper-links"><a class="links" href="#">Trending Products <i class="fas fa-chevron-down"></i></a>
+                                <div class="trending-dropdown">
+                                    <ul>
+                                        <li><a href="product.html">Biscuits & Snacks</a></li>
+                                        <li><a href="productpage.html">Breads & Bakery</a></li>
+                                        <li><a href="product.html">Breaksfast & Dairy</a></li>
+                                        <li><a href="productpage.html">Fruits & Vegetables</a></li>
+                                        <li><a href="filter.html">Beverages</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="upper-links"><a class="links" href="#">Almost Finished <i class="fas fa-chevron-down"></i></a>
+                                <div class="trending-dropdown">
+                                    <ul>
+                                        <li><a href="product.html">Frozen Foods</a></li>
+                                        <li><a href="productpage.html">Meats & Seafood</a></li>
+                                        <li><a href="product.html">Grocery & Staples</a></li>
+                                        <li><a href="productpage.html">Fruits</a></li>
+                                        <li><a href="product.html">Vegetables</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                </nav>
+            <!-- modals button  -->
+           
+              <!-- offcanvas end  -->
+            <div class="slider">
+                <div class="slider-info">
+                    <div class="weekend-discount">
+                        Weekend Discount
+                    </div>
+                    <h1>Get the Best Quality
+                        Products at the Lowest
+                        Prices</h1>
+                        <p>We have prepared special discounts for you on grocery products. Don't miss these opportunities...</p>
+                        <div class="price-area">
+                        <button class="slider-btn"><a href="productpage.html">Shop Now</a><i class="fas fa-arrow-right"></i></button>
+                        <div class="price">
+                           ₹220
+                            <span>₹300</span>
+                            <p>Don't miss this limited time offer.</p>
+                        </div>
+                    </div>
+                    </div>
+                 <!-- Swiper -->
+                 <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/slider-01.jpg.png"></div>
+                        <div class="swiper-slide"><img src="images/elements01.png"></div>
+                        <div class="swiper-slide"><img src="images/slider-03.jpg.png"></div>
+                     
+                    <div class="swiper-pagination"></div>
+                  </div>
+        
+                </div>	
+            </div>
+        </div>
+
+    
+    </div>
+</div>
+    
+       <!-- start payment section -->
+         <div class="payment-area">          
+                    <div class="row mbr-justify-content-center">
+                        <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="wrap">
+                                <div class="ico-wrap">
+                                    <img src="images/Clip path group.png" alt="img"/>
+                                </div>
+                                <div class="text-wrap vcenter">
+                                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Payment only online</span></h2>
+                                    <p class="mbr-fonts-style text1 mbr-text display-6">Tasigförsamhet beteendedesign. Mobile
+                                        checkout. Ylig kärrtorpa.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                           <div data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="wrap">
+                                <div class="ico-wrap">
+                                    <img src="images/SVG (1).png" alt="img"/>
+                                </div>
+                                <div class="text-wrap vcenter">
+                                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Create
+                                        <span>New stocks and sales</span>
+                                    </h2>
+                                    <p class="mbr-fonts-style text1 mbr-text display-6">Tasigförsamhet beteendedesign. Mobile
+                                        checkout. Ylig kärrtorpa.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                            <div data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="wrap">
+                                <div class="ico-wrap">
+                                    <img src="images/SVG (2).png" alt="img"/>
+                                </div>
+                                <div class="text-wrap vcenter">
+                                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Launch
+                                        <span>Quality assurance</span>
+                                    </h2>
+                                    <p class="mbr-fonts-style text1 mbr-text display-6">Tasigförsamhet beteendedesign. Mobile
+                                        checkout. Ylig kärrtorpa.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mbr-col-md-6 col-sm-6">
+                             <div data-aos="flip-left"data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="wrap">
+                                <div class="ico-wrap">
+                                    <img src="images/Clip path group (1).png" alt="img"/>
+                                </div>
+                                <div class="text-wrap vcenter">
+                                    <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5">Delivery from 1 hour<span></span></h2>
+                                    <p class="mbr-fonts-style text1 mbr-text display-6">Tasigförsamhet beteendedesign. Mobile
+                                        checkout. Ylig kärrtorpa.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            <!-- payment section end  -->
+
+
+<!-- Services section start -->
+<section class="what-we-do">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card card-1">
+                    <div class="card-block block-1">
+                        <div class="service-offer">Only This Week</div>
+                        <h3 class="card-title">Quality eggs at an affordable <span> price</span></h3>
+                        <p class="card-text">Eat one every day...</p>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card card-2">
+                    <div class="card-block block-2">
+                        <div class="service-offer">Only This Week</div>
+                        <h3 class="card-title">Snacks that nourishes our mind and body</h3>
+                        <p class="card-text">Shine the morning...</p>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card card-3">
+                    <div class="card-block block-3">
+                        <div class="service-offer">Only This Week</div>
+                        <h3 class="card-title">Unbeatable quality, unbeatable prices.</h3>
+                        <p class="card-text">Only this week. Don’t miss....</p>
+                        <a href="filter.html"> <button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+   
+</section>
+<!-- /Services section end-->
+ <!-- new arrival start  -->
+ <div class="new-arrival">
+    <div class="new-arrival-text">
+<h3>New Arrivals</h3>
+<p>Dont miss this opportunity at a special discount just for this week.</p>
+</div>
+<div class="grocery-slider-btn" id="arrivalbtn">View All <i class="fas fa-arrow-right"></i></div>
+</div>
+<!-- product-shopping-area  -->
+
+     <div class="product-add-area">
+        
+        <div class="swiper my-Swiper">
+            <div class="swiper-wrapper product-swiper" id="products-container">
+              <div class="swiper-slide col-xs-12">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/oil → 1-2-500x500.jpg.png">
+                              
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Mango Juice – 64fl oz Bottle</a></h3>
+                            <div class="price">₹40
+                                <span>₹60</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-87-500x500.jpg.png">
+                             
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Rising Pizza Crust – Pack</a></h3>
+                            <div class="price">₹60
+                                <span>₹80</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-12-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Orange Juice – 64
+                                fl oz Bottle</a></h3>
+                            <div class="price">₹30
+                                <span>₹50</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-30-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Margerita Pizza Crust – Pack</a></h3>
+                            <div class="price">₹50
+                                <span>₹80</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Evolve Protein Shake – pack
+                                </a></h3>
+                            <div class="price">₹120
+                                <span>₹150</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-9-500x500.jpg.png">
+                              
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Angel Soft Mega Rolls – 64
+                                pack</a></h3>
+                            <div class="price">₹140
+                                <span>₹160</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="swiper-slide col-xs-12">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-1-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Pizza Crust – 64
+                                pack</a></h3>
+                            <div class="price">₹50
+                                <span>₹70</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-10-500x500.jpg.png">
+                              
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Similace Advance – 64
+                                Pack</a></h3>
+                            <div class="price">₹60
+                                <span>₹90</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-104-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Mission Wrapes – 64
+                                Pack</a></h3>
+                            <div class="price">₹40
+                                <span>₹60</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-105-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Lays Classic – 64
+                                Pack</a></h3>
+                            <div class="price">₹70
+                                <span>₹90</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-109-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Banana – 2
+                                Dozen </a></h3>
+                            <div class="price">₹30
+                                <span>₹50</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-115-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Coffiee Powder – 64
+                                fl oz Bottle</a></h3>
+                            <div class="price">₹60
+                                <span>₹100</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-11-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Similar Kitchen – 64
+                                Pack</a></h3>
+                            <div class="price">₹40
+                                <span>₹60</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-115-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Coffiee – 64
+                                pack</a></h3>
+                            <div class="price">₹80
+                                <span>₹100</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-12-500x500.jpg.png">
+                              
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Orange Juice – 64
+                                fl oz Bottle</a></h3>
+                            <div class="price">₹100
+                                <span>₹120</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-124-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Scamblers – 4
+                                pack</a></h3>
+                            <div class="price">₹50
+                                <span>₹70</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-129-500x500.jpg.png">
+                              
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent  Fresh Apple  – 2
+                               Dozen </a></h3>
+                            <div class="price">₹120
+                                <span>₹140</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-2b-500x500.jpg.png">
+                                <img class="pic-2" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-2.jpg">
+                            </a>
+                            <ul class="social">
+                                <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                                <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">Sale</span>
+                            <span class="product-discount-label">20%</span>
+                        </div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star disable"></li>
+                        </ul>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">100 Percent Red Bay – 4
+                                Pack</a></h3>
+                            <div class="price">₹60
+                                <span>₹80</span>
+                            </div>
+                            <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+              </div>
+              </div>
+              <div class="swiper-pagination"></div>
+     </div>
+   
+<!-- product shoping end  -->
+
+<!-- experienced quality product start -->
+<div class="box">
+    <div class="experienced-quality-product">
+     	<div class="row">
+			    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+               
+					<div class="box-part text-center part-1">
+						<div class="title">
+                            <div class="service-offer">Only This Week</div>
+							<h3>Provides you experienced quality products</h3>
+						</div>
+                        
+						<div class="text">
+							<p>Feed your family the best</p>
+						</div>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+               
+					<div class="box-part text-center part-2">
+						<div class="title">
+                            <div class="service-offer">Only This Week</div>
+							<h3>Shopping with us for better quality and the best price</h3>
+						</div>
+                        
+						<div class="text">
+							<p>Only this week. Don’t miss...</p>
+						</div>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+					 </div>
+				</div>	 
+				
+				 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+               
+					<div class="box-part text-center part-3">
+						<div class="title">
+                            <div class="service-offer">Only This Week</div>
+							<h3>Get the best quality products at the lowest prices</h3>
+						</div>
+                        
+						<div class="text">
+							<p>A different kind of grocery store</p>
+						</div>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+					 </div>
+				</div>	 
+				
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+               
+					<div class="box-part text-center part-4 ">
+						<div class="title">
+                            <div class="service-offer">Only This Week</div>
+							<h3>Where you get your all favorite brands under one roof</h3>
+						</div>
+                        
+						<div class="text">
+							<p>Only this week. Don’t miss...</p>
+						</div>
+                        <a href="filter.html"><button class="shop-btn">Shop Now<i class="fas fa-arrow-right"></i></button></a>
+					 </div>
+				</div>	 
+		</div>		
+    </div>
+</div>
+<!-- experienced quality product end -->
+
+<!-- Featured Products  -->
+ <div class="feature-product">
+    <div class="featured-heading">
+<h3>Featured Products</h3>
+<p>Do not miss the current offers until the end of March.</p>
+</div>
+<button class="featured-btn">View All <i class="fas fa-arrow-right"></i></button>
+
+</div>
+<div class="product-add-area">
+    <div class="swiper feature-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" id="product1" src="images/Link → 1-109-500x500.jpg.png" alt=""> 
+                        </a>
+                        <ul class="social">
+                            <li><a href="details.html" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Marketside Fresh Organic
+                            Bananas, Bunch</a></h3>
+                        <div class="price">
+                            ₹50
+                            <span>₹100</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a class="add-to-cart" href="#" onclick="addToCart('Marketside Fresh Organic Bananas, Bunch', 50, 'images/Link → 1-109-500x500.jpg.png')">ADD TO CART<i class="fas fa-plus"></i></a>
+
+                    </div>
+                </div>
+                
+            </div>            
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="images/Link lays→ 1-105-500x500.jpg.png" >
+                           
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-discount-label">-12%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag</a></h3>
+                        <div class="price">
+                            ₹60
+                            <span>₹100</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+<a class="add-to-cart" href="#" onclick="addToCart('Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag', 60, 'images/Link lays→ 1-105-500x500.jpg.png')">
+  ADD TO CART <i class="fas fa-plus"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 featurevisible">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="images/Link → 1-82-500x500.jpg.png">
+                           
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Great Value Classic Crust Pepperoni Microwave…</a></h3>
+                        <div class="price">
+                            ₹120
+                            <span>₹150</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+<a class="add-to-cart" href="" href="#" onclick="addToCart('Great Value Classic Crust Pepperoni Microwave…', 120, 'images/Link → 1-82-500x500.jpg.png')">
+    ADD TO CART<i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="swiper-slide">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="images/Link → 1-7-500x500.jpg.png">
+                          
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">All Natural 85_15 Ground Beef – 1lb</a></h3>
+                        <div class="price">
+                           ₹80
+                            <span>₹120</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+<a class="add-to-cart" href="" onclick="addToCart('All Natural 85_15 Ground Beef – 1lb', 80, 'images/Link → 1-7-500x500.jpg.png')">ADD TO CART<i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="images/Link → 1-6-500x500.jpg.png">
+                          
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">ACT Anticavity Fluoride Mouthwash With Zero Alcoho…</a></h3>
+                        <div class="price">
+                            ₹40
+                            <span>₹80</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+<a class="add-to-cart" href="" onclick="addToCart('ACT Anticavity Fluoride Mouthwash With Zero Alcoho…', 40, 'images/Link → 1-6-500x500.jpg.png')">
+ADD TO CART<i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 featurevisible">
+                <div class="product-grid4">
+                    <div class="product-image4">
+                        <a href="#">
+                            <img class="pic-1" src="images/Link → 3-500x500.jpg.png">
+                          
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                            <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                        <span class="product-new-label">New</span>
+                        <span class="product-discount-label">-10%</span>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">FireSmith Flame Grilled Chicken Breast – Deli Fresh Sliced –…</a></h3>
+                        <div class="price">
+                            ₹70
+                            <span>₹120</span>
+                        </div>
+                        <div class="grid4-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+<a class="add-to-cart" href="" onclick="addToCart('FireSmith Flame Grilled Chicken Breast – Deli Fresh Sliced –…', 70, 'images/Link → 3-500x500.jpg.png')">
+ADD TO CART<i class="fas fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+       
+         </div>
+          </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper feature-Swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/Link → 1-7-500x500.jpg.png">
+                                  
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">All Natural 85_15 Ground Beef – 1lb fresh beef</a></h3>
+                                <div class="price">
+                                 ₹50
+                                    <span>₹80</span>
+                                </div>
+                                <div class="grid4-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+ <a class="add-to-cart" href="" onclick="addToCart('All Natural 85_15 Ground Beef – 1lb fresh beef', 50, 'images/Link → 1-7-500x500.jpg.png')">
+    ADD TO CART<i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 offset-3">
+                            <div class="offer-timer">
+                               <div>
+                                  <span class="days" id="offer-day"></span> 
+                                  <!-- <div class="timetext">Days</div> -->
+                               </div>
+                               <div>
+                                  <span class="hours" id="offer-hour"></span> 
+                                  <!-- <div class="timetext">Hours</div> -->
+                               </div>
+                               <div>
+                                  <span class="minutes" id="offer-minute"></span> 
+                                  <!-- <div class="timetext">Minutes</div> -->
+                               </div>
+                               <div>
+                                  <span class="seconds" id="offer-second"></span> 
+                                  <!-- <div class="timetext">Seconds</div> -->
+                               </div>
+                               <p id="times-end"></p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/Link → 1-6-500x500.jpg.png">
+                                  
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">ACT Anticavity Fluoride Mouthwash With Zero Alcoho…</a></h3>
+                                <div class="price">
+                                  ₹100
+                                    <span>₹140</span>
+                                </div>
+                                <div class="grid4-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+<a class="add-to-cart" href="" onclick="addToCart('ACT Anticavity Fluoride Mouthwash With Zero Alcoho…', 100, 'images/Link → 1-6-500x500.jpg.png')">
+    ADD TO CART<i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 featurevisible">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/Link → 3-500x500.jpg.png">
+                                  
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">FireSmith Flame Grilled Chicken Breast – Deli Fresh Sliced –…</a></h3>
+                                <div class="price">
+                                   ₹50
+                                    <span>₹80</span>
+                                </div>
+                                <div class="grid4-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+ <a class="add-to-cart" href="" onclick="addToCart('FireSmith Flame Grilled Chicken Breast – Deli Fresh Sliced –…', 50, 'images/Link → 3-500x500.jpg.png')">
+    ADD TO CART<i class="fas fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+               
+                 </div>
+              <div class="swiper-slide">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-grid4">
+                        <div class="product-image4">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-109-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                            <span class="product-discount-label">-10%</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Marketside Fresh Organic Bananas, Bunch</a></h3>
+                            <div class="price">
+                              ₹60
+                                <span>₹160</span>
+                            </div>
+                            <div class="grid4-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+<a class="add-to-cart" href="" onclick="addToCart('Marketside Fresh Organic Bananas, Bunch', 60, 'images/Link → 1-109-500x500.jpg.png')">ADD TO CART<i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="product-grid4">
+                        <div class="product-image4">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link lays→ 1-105-500x500.jpg.png" >
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-discount-label">-12%</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag</a></h3>
+                            <div class="price">
+                              ₹120
+                                <span>₹150</span>
+                            </div>
+                            <div class="grid4-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+<a class="add-to-cart" href="" onclick="addToCart('Lay’s Classic Potato Snack Chips, Party Size, 13 oz Bag', 120, 'images/Link lays→ 1-105-500x500.jpg.png')">
+    ADD TO CART<i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-sm-6 featurevisible">
+                    <div class="product-grid4">
+                        <div class="product-image4">
+                            <a href="#">
+                                <img class="pic-1" src="images/Link → 1-82-500x500.jpg.png">
+                               
+                            </a>
+                            <ul class="social">
+                                <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                            <span class="product-new-label">New</span>
+                            <span class="product-discount-label">-10%</span>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="title"><a href="#">Great Value Classic Crust Pepperoni Microwave Frozen…</a></h3>
+                            <div class="price">
+                              ₹80
+                                <span>₹120</span>
+                            </div>
+                            <div class="grid4-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+<a class="add-to-cart" href="" onclick="addToCart('Great Value Classic Crust Pepperoni Microwave Frozen…', 80, 'images/Link → 1-82-500x500.jpg.png')">
+ADD TO CART<i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+              </div>
+              <div class="swiper-pagination"></div>
+  
+</div>
+<hr>
+<!-- product add area end  -->
+
+<!-- what we can do start  -->
+<section class="what-we-do">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-12 col-lg-6 ">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card grocry-sopping1">
+                    <div class="card-block block-1">
+                        <div class="service-offer">Only This Week</div>
+                        <h3 class="card-title">Make your grocery shopping easy with us</span></h3>
+                        <p class="card-text">Only this week. Don’t miss...</p>
+                        <button class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card grocry-sopping2">
+                    <div class="card-block block-2">
+                        <div class="service-offer">Only This Week</div>
+                        <h3 class="card-title">Get your everyday needs here with us</h3>
+                        <p class="card-text">A different kind of grocery store</p>
+                        <button class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+</section>
+<!-- what we can do end  -->
+ <!-- best seller start  -->
+<div class="best-seller">
+    <div class="best-seller-heading">
+        <h3>Best Sellers</h3>
+        <p>Some of the new products arriving this weeks</p>
+    </div>
+    <button class="bestseller-btn"><a href="filter.html"> View All <i class="fas fa-arrow-right"></i></a></button>
+</div>
+<div class="best-selling-product">
+    <div class="sellerproduct">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-6can-500x500.jpg.png">
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">100 Percent Schweppers Drink – 64
+                        fl oz Bottle</a></h3>
+                    <div class="price">₹120
+                        <span>₹160</span>
+                    </div>
+                    <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/mother-dairy-processed-cheese-slices-480-g-product-images-o493691920-p598962961-0-202308302218.webp">
+                       
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Great Value Cheese Slice
+                       - pack</a></h3>
+                    <div class="price">₹30
+                        <span>₹50</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 productBanner">
+        <div class="product-banner">
+            <div class="product-banner-text">
+                <h3>We are always here to help you with your grocery</h3>
+                <p>A different kind of grocery store</p>
+            </div>
+            <img src="images/banner-10.jpg.png" width="100%"  alt="img">
+        </div>
+        </div>
+            
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-9-500x500.jpg.png">
+                        
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Angel Soft Toilet Paper, 9
+                        Mega Rolls</a></h3>
+                    <div class="price">₹40
+                        <span>₹60</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-500x500.jpg.png">
+                       
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Great Value Evolve Powder 64
+                        pack
+                    </a></h3>
+                    <div class="price">₹60
+                        <span>₹100</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-3-500x500.jpg.png">
+                       
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">20%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star disable"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">100 Percent  AW drink – 64
+                        fl oz Bottle</a></h3>
+                    <div class="price">₹140
+                        <span>₹180</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                       
+                        <img class="pic-1" src="images/paloma.png">
+                       
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Great Value Grapefrint
+                        Ploma, Supreme</a></h3>
+                    <div class="price">₹40
+                        <span>₹70</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 productBanner">
+        <div class="product-banner">
+            <div class="product-banner-text">
+            <h3>We are always here to help you with your grocery</h3>
+            <p>A different kind of grocery store</p>
+        </div>
+            <img src="images/banner-11.jpg.png" width="100%"  alt="img">
+        </div>
+        </div>
+            
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-124-500x500.jpg.png">
+                       
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Great Value Scamblers 64 
+                        Pack</a></h3>
+                    <div class="price">₹50
+                        <span>₹80</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#">
+                        <img class="pic-1" src="images/Link → 1-11-500x500.jpg.png">
+                        
+                    </a>
+                    <ul class="social">
+                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                    <span class="product-new-label">Sale</span>
+                    <span class="product-discount-label">50%</span>
+                </div>
+                <ul class="rating">
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">Great Value Simple Kitchen
+                        Pack</a></h3>
+                    <div class="price">₹30
+                        <span>₹50</span>
+                    </div>
+                     <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- best seller end  -->
+
+
+
+    <div class="online-store">
+        <img src="images/div.site-promo1.png" alt="img">
+        <div class="onlineStore-text">
+    <h3>In store or online your health & safety is our top priority</h3>
+    <p>The only supermarket that makes your life easier, makes you enjoy life and makes it better</p>
+        </div>
+    </div>
+<div class="popular-company">
+    <div class="company-heading">
+        <h3>Popular Companies</h3>
+        <p>Some of the new products arriving this weeks</p>
+    </div> 
+    <button class="company-btn">View All <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>
+
+<!-- rating area  -->
+<div class="container-rating">
+    <div class="swiper rating-Swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="col-lg-12 col-md-12 col-sm-4 review">
+                <hr/>
+                <div class="review-block">
+                    <div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+                    <div class="ratingarea">
+                        <div class="rate-img col-sm-2">
+                            <img src="images/Link.png" class="img-rounded">
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="review-block-title">Machic</div>
+                            <div class="review-block-description">Featured</div>
+                            <div class="review-block-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="rating-text">
+                  <p>Good quality product can only be found in good stores</p>
+                </div>
+           
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+        
+                <div class="ratingarea">
+                    <div class="rate-img col-sm-2">
+                        <img src="images/Link.png" class="img-rounded">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="review-block-title">Machic</div>
+                        <div class="review-block-description">Featured</div>
+                        <div class="review-block-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+              </div>
+              <div class="rating-text">
+              <p>Good quality product can only be found in good stores</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+      
+            <div class="ratingarea">
+                <div class="rate-img col-sm-2">
+                    <img src="images/Link.png" class="img-rounded">
+                </div>
+                <div class="col-sm-9">
+                    <div class="review-block-title">Machic</div>
+                    <div class="review-block-description">Featured</div>
+                    <div class="review-block-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+          </div>
+          <div class="rating-text">
+          <p>Good quality product can only be found in good stores</p>
+        </div>
+    
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+
+            <div class="ratingarea">
+                <div class="rate-img col-sm-2">
+                    <img src="images/Link.png" class="img-rounded">
+                </div>
+                <div class="col-sm-9">
+                    <div class="review-block-title">Machic</div>
+                    <div class="review-block-description">Featured</div>
+                    <div class="review-block-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+          </div>
+          <div class="rating-text">
+          <p>Good quality product can only be found in good stores</p>
+        </div>
+
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+
+        <div class="ratingarea">
+            <div class="rate-img col-sm-2">
+                <img src="images/Link.png" class="img-rounded">
+            </div>
+            <div class="col-sm-9">
+                <div class="review-block-title">Machic</div>
+                <div class="review-block-description">Featured</div>
+                <div class="review-block-rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+      </div>
+      <div class="rating-text">
+      <p>Good quality product can only be found in good stores</p>
+    </div>
+
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12 rating-area">
+
+    <div class="ratingarea">
+        <div class="rate-img col-sm-2">
+            <img src="images/Link.png" class="img-rounded">
+        </div>
+        <div class="col-sm-9">
+            <div class="review-block-title">Machic</div>
+            <div class="review-block-description">Featured</div>
+            <div class="review-block-rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+  </div>
+  <div class="rating-text">
+  <p>Good quality product can only be found in good stores</p>
+</div>
+
+</div>
+            </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="col-lg-12 col-md-12 col-sm-4 review">
+                    <hr/>
+                    <div class="review-block">
+                        <div class="rating-area">
+                        <div class="ratingarea">
+                            <div class="rate-img col-sm-2">
+                                <img src="images/images.jpeg" class="img-rounded">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="review-block-title">Machic</div>
+                                <div class="review-block-description">Featured</div>
+                                <div class="review-block-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="rating-text">
+                      <p>Good quality product can only be found in good stores</p>
+                    </div>
+                </div>
+                <div class="rating-area">
+                    <div class="ratingarea">
+                        <div class="rate-img col-sm-2">
+                            <img src="images/images.jpeg" class="img-rounded">
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="review-block-title">Machic</div>
+                            <div class="review-block-description">Featured</div>
+                            <div class="review-block-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="rating-text">
+                  <p>Good quality product can only be found in good stores</p>
+                </div>
+            </div>
+            <div class="rating-area">
+                <div class="ratingarea">
+                    <div class="rate-img col-sm-2">
+                        <img src="images/images.jpeg" class="img-rounded">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="review-block-title">Machic</div>
+                        <div class="review-block-description">Featured</div>
+                        <div class="review-block-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+              </div>
+              <div class="rating-text">
+              <p>Good quality product can only be found in good stores</p>
+            </div>
+        </div>
+      <div class="rating-area">
+                <div class="ratingarea">
+                    <div class="rate-img col-sm-2">
+                        <img src="images/images.jpeg" class="img-rounded">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="review-block-title">Machic</div>
+                        <div class="review-block-description">Featured</div>
+                        <div class="review-block-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+            </div>
+            <div class="rating-text">
+            <p>Good quality product can only be found in good stores</p>
+            </div>
+            </div>
+            <div class="rating-area">
+                <div class="ratingarea">
+                    <div class="rate-img col-sm-2">
+                        <img src="images/images.jpeg" class="img-rounded">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="review-block-title">Machic</div>
+                        <div class="review-block-description">Featured</div>
+                        <div class="review-block-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+            </div>
+            <div class="rating-text">
+            <p>Good quality product can only be found in good stores</p>
+            </div>
+            </div>
+            <div class="rating-area">
+                <div class="ratingarea">
+                    <div class="rate-img col-sm-2">
+                        <img src="images/images.jpeg" class="img-rounded">
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="review-block-title">Machic</div>
+                        <div class="review-block-description">Featured</div>
+                        <div class="review-block-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+            </div>
+            <div class="rating-text">
+            <p>Good quality product can only be found in good stores</p>
+            </div>
+            </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+ <!-- /container -->
+
+
+<!--footer starts from here-->
+<footer class="footer">
+    
+    <div class="container bottom_border">
+        <div class="footer-text">
+            <div class="footer-text-area">
+        <h5>Join our newsletter for £10 offs</h5>
+    <p>Register now to get latest updates on promotions &
+        coupons.Don’t worry, we not spam!</p>
+    </div>
+    <div class="footer-search-area">
+        <div class="container">
+            <div class="row">
+                <div class="search">
+        <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" />
+         <button type="submit" class="btn btn-sm">Search</button>
+        </div>
+            </div>
+        </div>
+        <p>By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.</p>
+    </div>
+    </div>
+    <div class="footer-links">
+        
+    <div class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 firstmenu-footer">
+    <h5 class="headin5_amrc col_white_amrc pt2">Do You Need Help ?</h5>
+    <!--headin5_amrc-->
+    <p class="mb10">Autoseligen syr. Nek diarask fröbomba. Nör
+        antipol kynoda nynat. Pressa fåmoska.</p>
+    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+    <p><i class="fa fa-phone"></i> 0 800 300-353 </p>
+    <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+</div>
+    
+    <div class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 firstmenu-footer">
+    <h5 class="headin5_amrc col_white_amrc pt2">Make Money with Us</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="#">Sell on Grogin</a></li>
+    <li><a href="#">Sell Your Services on Grogin</a></li>
+    <li><a href="#">Sell on Grogin Business</a></li>
+    <li><a href="#">Sell Your Apps on Grogin</a></li>
+    <li><a href="#">Become an Affilate</a></li>
+    <li><a href="#">Advertise Your Products</a></li>
+    <li><a href="#">Sell-Publish with Us</a></li>
+    <li><a href="#">Become an Blowwe Vendor</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    
+    <div class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 firstmenu-footer">
+        <h5 class="headin5_amrc col_white_amrc pt2"> Us Help You</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="#">Accessibility Statement</a></li>
+    <li><a href="#">Your Orders</a></li>
+    <li><a href="#">Returns & Replacements</a></li>
+    <li><a href="#">Shipping Rates & Policies</a></li>
+    <li><a href="#">Refund and Returns Policy</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms and Conditions</a></li>
+    <li><a href="#">Cookie Settings</a></li>
+    <li><a href="#">Help Center</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    
+    
+    <div class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 firstmenu-footer">
+        <h5 class="headin5_amrc col_white_amrc pt2"> Us Help You</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a href="#">Careers for Grogin</a></li>
+    <li><a href="#">About Grogin</a></li>
+    <li><a href="#">Inverstor Relations</a></li>
+    <li><a href="#">Grogin Devices</a></li>
+    <li><a href="#">Customer reviews</a></li>
+    <li><a href="#">Social Responsibility</a></li>
+    <li><a href="#">Store Locations</a></li>
+    </ul>
+    <!--footer_ul_amrc ends here-->
+    </div>
+    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <h5 class="headin5_amrc col_white_amrc pt2">Download our app</h5>
+        <div class="download-app">
+            <div class="dawnload-img">
+            <img src="images/Link → google-play-button-dark.png.png" alt="img"/>
+            
+            <img src="images/Link → apple-store-button-dark.png.png" alt="img"/>
+        </div>
+        <div class="dawnload-text">
+            <p>Download App Get
+                -10% Discount</p>
+                <p>Download App Get
+                    -20% Discount</p>
+                </div>
+        </div>
+        <!--headin5_amrc ends here-->
+        
+        <ul class="social_footer_ul">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        <!--footer_ul2_amrc ends here-->
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+        
+        <div class="privacy-policy">
+    <!--foote_bottom_ul_amrc ends here-->
+    <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+    <div class="policy">
+    <p class="text-center"><a href="#">Terms and Conditions</a></p><p class="text-center"><a href="#">Privacy Policy</a></p><p class="text-center"><a href="#">Order Tracking</a></p></div>
+</div>
+    <!--social_footer_ul ends here-->
+    </div>
+    
+    </footer>
+    
+    
+    
+
+    <!-- bootsrap js link  -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- scroll fade  -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+     <script>
+      var swiper =new Swiper(".mySwiper",{
+       navigation:{
+            nextEl:".swiper-button-next",
+            prevEl:".swiper-button-prev",
+       },
+       
+        loop:true,
+       autoplay:{
+         delay:1000,
+          disableOnInteraction:false
+      },
+        effect:"fade",
+        pagination:{
+            el:".swiper-pagination",
+            clickable:true
+        },
+        parallax:true,
+        speed:400
+
+    })
+var swiper =new Swiper(".my-Swiper",{
+       navigation:{
+            nextEl:".grocery-slider-btn",
+       },
+       loop:true,
+        await:{
+          delay:1000,
+            disableOnInteraction:true
+        },
+       effect:"fade",
+        pagination:{
+            el:".swiper-pagination",
+            clickable:true
+        },
+        parallax:true,
+        speed:400
+    })
+    var swiper =new Swiper(".feature-Swiper",{
+       navigation:{
+            nextEl:".featured-btn",
+       },
+       loop:true,
+        await:{
+          delay:1000,
+            disableOnInteraction:true
+        },
+       effect:"fade",
+        pagination:{
+            el:".swiper-pagination",
+            clickable:true
+        },
+        parallax:true,
+        speed:400
+    })
+    var swiper =new Swiper(".rating-Swiper",{
+       navigation:{
+            nextEl:".company-btn",
+       },
+       loop:true,
+        await:{
+          delay:1000,
+            disableOnInteraction:true
+        },
+       effect:"fade",
+        pagination:{
+            el:".swiper-pagination",
+            clickable:true
+        },
+        parallax:true,
+        speed:400
+    })
+
+ AOS.init();
+ AOS.init({
+    disable: 'mobile' // disables AOS on phones and tablets
+  });
+      </script>
+      <script>
+  if (window.innerWidth > 1024) {
+    // Only initialize AOS if it's desktop (screen > 1024px)
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+    });
+  }
+</script>
+
+     <!-- custom js link  -->
+      <script src="js/script.js"></script>
+</body>
+</html>
