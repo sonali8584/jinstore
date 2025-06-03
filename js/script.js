@@ -222,90 +222,118 @@ console.log(menulist.classList.toggle("menuitem"));
     }
 
 
+const newArrivalproducts = [
+  { image: "images/oil → 1-2-500x500.jpg.png", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 ,rating: 4  },
+  { image: "images/Link → 1-87-500x500.jpg.png", title: "100 Percent Rising Pizza Crust – Pack", price: 8 ,rating: 3.5},
+  { image: "images/Link → 1-12-500x500.jpg.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 ,rating: 3},
+  { image: "images/Link → 1-30-500x500.jpg.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 ,rating: 4.5},
+  { image: "images/Link → 1-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 ,rating: 5 },
+  { image: "images/Link → 1-9-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18,rating: 4.5 },
+  { image: "images/Apple-Juice-Drink-is-a-healthy-natural-product-500ml-can-Brand-Nawon.jpg", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 ,rating: 3.5},
+  { image: "images/40199584_3-tropicana-mixed-fruit-delight.webp", title: "100 Percent Rising Pizza Crust – Pack", price: 8 ,rating: 4.5},
+  { image: "images/250ml-paper-boat-swing-yummy-guava-juice.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 ,rating: 4.5},
+  { image: "images/paloma.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 ,rating: 3.5},
+  { image: "images/Link → 1-140-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 ,rating: 5},
+  { image: "images/Link → 1-6can-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18 ,rating: 4.5},
+  { image: "images/Link → 1-115-500x500.jpg.png", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 ,rating: 4.5},
+  { image: "images/Link → 1-104-500x500.jpg.png", title: "100 Percent Rising Pizza Crust – Pack", price: 8 ,rating: 4.5},
+  { image: "images/Link → 1-12-500x500.jpg.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 ,rating: 4.5},
+  { image: "images/Link → 1-30-500x500.jpg.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 ,rating: 3.5},
+  { image: "images/Link → 1-124-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 ,rating: 4.5},
+  { image: "images/Link → 1-22-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18 ,rating: 4.5},
+ 
+];
 
-// new arrival section 
-// let newArrivalproducts = [
-//   { image: "images/oil → 1-2-500x500.jpg.png", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 },
-//   { image: "images/Link → 1-87-500x500.jpg.png", title: "100 Percent Rising Pizza Crust – Pack", price: 8 },
-//   { image: "images/Link → 1-12-500x500.jpg.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 },
-//   { image: "images/Link → 1-30-500x500.jpg.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 },
-//   { image: "images/Link → 1-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 },
-//   { image: "images/Link → 1-9-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18 },
-//    { image: "images/oil → 1-2-500x500.jpg.png", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 },
-//   { image: "images/Link → 1-87-500x500.jpg.png", title: "100 Percent Rising Pizza Crust – Pack", price: 8 },
-//   { image: "images/Link → 1-12-500x500.jpg.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 },
-//   { image: "images/Link → 1-30-500x500.jpg.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 },
-//   { image: "images/Link → 1-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 },
-//   { image: "images/Link → 1-9-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18 },
-//    { image: "images/oil → 1-2-500x500.jpg.png", title: "100 Percent Mango Juice 64fl oz Bottle", price: 10 },
-//   { image: "images/Link → 1-87-500x500.jpg.png", title: "100 Percent Rising Pizza Crust – Pack", price: 8 },
-//   { image: "images/Link → 1-12-500x500.jpg.png", title: "100 Percent Orange Juice 64 fl oz Bottle", price: 16 },
-//   { image: "images/Link → 1-30-500x500.jpg.png", title: "100 Percent Margerita Pizza Crust Pack", price: 12 },
-//   { image: "images/Link → 1-500x500.jpg.png", title: "100 Percent Evolve Protein Shake pack", price: 14 },
-//   { image: "images/Link → 1-9-500x500.jpg.png", title: "100 Percent Angel Soft Mega Rolls 64 pack", price: 18 },
-// ];
-
-// let container = document.getElementById("products-container");
-
-// for (let i = 0; i < newArrivalproducts.length; i++) {
-//   let product = newArrivalproducts[i];
-  // product.style.width="200px"
+const sliderTrack = document.getElementById("slider-track");
 
 
 
 
+function getStarRating(rating) {
+  // full star: ★, empty star: ☆
+  let fullStars = Math.floor(rating);
+  let halfStar = rating % 1 >= 0.5;
+  let emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
 
-  
-//   let productHTML = `
-//     <div class="product-grid">
-//                         <div class="product-image">
-//                             <a href="#">
-//                                 <img class="pic-1" src="${product.image}" alt="${product.title}">
-                              
-//                             </a>
-//                             <ul class="social">
-//                                 <li><a href="details.html" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-//                                 <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-//                                 <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-//                             </ul>
-//                             <span class="product-new-label">Sale</span>
-//                             <span class="product-discount-label">20%</span>
-//                         </div>
-//                         <ul class="rating">
-//                             <li class="fa fa-star"></li>
-//                             <li class="fa fa-star"></li>
-//                             <li class="fa fa-star"></li>
-//                             <li class="fa fa-star"></li>
-//                             <li class="fa fa-star disable"></li>
-//                         </ul>
-//                         <div class="product-content">
-//                             <h3 class="title"><a href="#">${product.title}</a></h3>
-//                             <div class="price">₹${product.price} <span>₹${product.price + 20}</span></span>
-//                             </div>
-//                             <button class="add-to-cart"><a  href="">+ Add To Cart</a></button>
-//                         </div>
-//                     </div>
-//   `;
+  let starsHTML = "";
+  for (let i = 0; i < fullStars; i++) starsHTML += "★";
+  if (halfStar) starsHTML += "⯨"; // or you can use a half star unicode or SVG
+  for (let i = 0; i < emptyStars; i++) starsHTML += "☆";
 
-//   container.innerHTML += productHTML;
-// }
-// let productbox =document.getElementById("product-box");
-// productbox.appendChild(productHTML)
+  return starsHTML;
+}
+// Render cards
+newArrivalproducts.forEach(product => {
+  const card = document.createElement("div");
+  card.className = "product-card";
+  card.innerHTML = `
+    <img src="${product.image}" alt="${product.title}">
+    <h4>${product.title}</h4>
+    <p>₹${product.price}</p>
+    <div class="rating">${getStarRating(product.rating)}</div>
+    <button class="add-to-cart-btn">Add to Cart</button>
+  `;
+  sliderTrack.appendChild(card);
+});
+
+// Variables
+let currentPosition = 0;
+let slidingForward = true;
+
+function getVisibleCount() {
+  const width = window.innerWidth;
+  if (width >= 1024) return 6; // Desktop
+  if (width >= 768) return 3;  // Tablet
+  return 2;                    // Mobile
+}
+
+function getCardWidth() {
+  // Get width of one card dynamically
+  const card = document.querySelector('.product-card');
+  if (!card) return 0;
+  const style = window.getComputedStyle(card);
+  return card.offsetWidth + parseFloat(style.marginRight);
+}
+
+document.getElementById("arrivalbtn").addEventListener("click", () => {
+  const visibleCount = getVisibleCount();
+  const cardWidth = getCardWidth();
+  const totalCards = newArrivalproducts.length;
+
+  // Maximum left slide (negative value)
+  const maxSlide = -cardWidth * (totalCards - visibleCount);
+
+  if (slidingForward) {
+    currentPosition -= cardWidth * visibleCount;
+    if (currentPosition <= maxSlide) {
+      currentPosition = maxSlide;
+      slidingForward = false;
+    }
+  } else {
+    currentPosition += cardWidth * visibleCount;
+    if (currentPosition >= 0) {
+      currentPosition = 0;
+      slidingForward = true;
+    }
+  }
+
+  sliderTrack.style.transform = `translateX(${currentPosition}px)`;
+});
+
+// Optional: Recalculate on window resize
+window.addEventListener("resize", () => {
+  // Reset position and direction on resize for safety
+  currentPosition = 0;
+  slidingForward = true;
+  sliderTrack.style.transform = `translateX(${currentPosition}px)`;
+});
 
 
 
-// let arrivalbtn=document.getElementById("arrivalbtn");
-// arrivalbtn.addEventListener("click", (event)=> {
-// event.preventDefault();
-// console.log("hello")
-// container.scrollBy({left:-600, behavior:"smooth"})
-// })
-// arrivalbtn.addEventListener("click", (event)=> {
-// event.preventDefault();
-// console.log("hello")
-// container.scrollBy({left:600, behavior:"smooth"})
-// })
-
-    
-
-    
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("add-to-cart-btn")) {
+    const title = e.target.parentElement.querySelector("h4").innerText;
+    alert(`${title} added to cart!`);
+    // Or push to a cart array here
+  }
+});

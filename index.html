@@ -818,13 +818,21 @@
 </div>
 <div class="grocery-slider-btn" id="arrivalbtn">View All <i class="fas fa-arrow-right"></i></div>
 </div>
+<div id="products-container" class="slider-container" style="overflow: hidden; width: 100%; position: relative;">
+  <div id="slider-track" class="slider-track" style="display: flex; transition: transform 0.5s ease;"></div>
+</div>
+
+<!-- Slide Button -->
+<div id="products-container" class="slider-container">
+  <div id="slider-track" class="slider-track"></div>
+</div>
 <!-- product-shopping-area  -->
 
-     <div class="product-add-area">
+     <!-- <div class="product-add-area">
         
         <div class="swiper my-Swiper">
-            <div class="swiper-wrapper product-swiper" id="products-container">
-              <div class="swiper-slide col-xs-12">
+            <div id="products-container">
+             <div class="swiper-slide col-xs-12">
                 <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6 product-box">
                     <div class="product-grid">
                         <div class="product-image">
@@ -1401,12 +1409,12 @@
                         </div>
                     </div>
                 </div>
-             </div>
+             </div> 
               </div>
               </div>
               <div class="swiper-pagination"></div>
      </div>
-   
+    -->
 <!-- product shoping end  -->
 
 <!-- experienced quality product start -->
@@ -2718,23 +2726,23 @@ ADD TO CART<i class="fas fa-plus"></i></a>
         speed:400
 
     })
-var swiper =new Swiper(".my-Swiper",{
-       navigation:{
-            nextEl:".grocery-slider-btn",
-       },
-       loop:true,
-        await:{
-          delay:1000,
-            disableOnInteraction:true
-        },
-       effect:"fade",
-        pagination:{
-            el:".swiper-pagination",
-            clickable:true
-        },
-        parallax:true,
-        speed:400
-    })
+// var swiper =new Swiper(".my-Swiper",{
+//        navigation:{
+//             nextEl:".grocery-slider-btn",
+//        },
+//        loop:true,
+//         await:{
+//           delay:1000,
+//             disableOnInteraction:true
+//         },
+//        effect:"fade",
+//         pagination:{
+//             el:".swiper-pagination",
+//             clickable:true
+//         },
+//         parallax:true,
+//         speed:400
+//     })
     var swiper =new Swiper(".feature-Swiper",{
        navigation:{
             nextEl:".featured-btn",
