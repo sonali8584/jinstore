@@ -37,7 +37,7 @@
 
 
 
-const deadline = new Date("june 31, 2025 12:00:00").getTime();             
+const deadline = new Date("june 31, 2028 12:00:00").getTime();             
 const x = setInterval(function() {
    const currentTime = new Date().getTime();       
    // console.log(currentTime);         
@@ -63,7 +63,7 @@ const x = setInterval(function() {
 
 
 
-const deadend = new Date("june 31, 2025 00:00:00").getTime();             
+const deadend = new Date("december 31, 2025 00:00:00").getTime();             
 const y = setInterval(function() {
    const currentTimer = new Date().getTime();                
    const time = deadend - currentTimer; 
@@ -337,3 +337,14 @@ document.addEventListener("click", function (e) {
     // Or push to a cart array here
   }
 });
+
+
+
+
+
+
+// apl calls 
+
+
+
+
